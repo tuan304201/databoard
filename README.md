@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+Guide to set up and run a ReactJS project: https://github.com/tuan304201/databoard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To set up and run the ReactJS project from tuan304201/databoard Github repository, you need to follow these steps:
 
-## Available Scripts
+1. Clone the repository to your local machine using the command: git clone https://github.com/tuan304201/databoard.git
+2. In the project directory, run the command npm install to install the necessary dependencies for the project.
+3. After installation, run the command npm start to run the project in development mode.
+4. The browser will automatically open the page http://localhost:3000/ and you will see the project's interface displayed.
 
-In the project directory, you can run:
+***** Note: You need to install NodeJS and npm before performing the above steps.
+--------------------------------------------------------------------------------------------------------------------------------------------
 
-### `npm start`
+*******  Interface displayed:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![image](https://user-images.githubusercontent.com/106050800/217055340-f3dfbd44-ad95-4d3a-879d-92506cca3218.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+--------------------------------------------------------------------------------------------------------------------------------------------
 
-### `npm test`
+*******  UseEffect function calls an API at 'https://randomuser.me/api/?results=100' and uses fetch to get data from the API. After the data is retrieved, it will be parsed into JSON and passed to the setUsers function to update the component's state.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image](https://user-images.githubusercontent.com/106050800/217055911-fae68cb3-bdf4-4c6c-a054-87ca2ff0f884.png)
 
-### `npm run build`
+--------------------------------------------------------------------------------------------------------------------------------------------
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+******* fullName is a function to get and concatenate data into fullname from api, avatar is a function to get image from api.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![image](https://user-images.githubusercontent.com/106050800/217056806-bd3f3819-531d-4f4f-a799-2ea3fadcfb91.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+--------------------------------------------------------------------------------------------------------------------------------------------
 
-### `npm run eject`
+*******  I use Primereact library to display the data to the table.
+* value: get data from state users.
+* paginator: show pagination.
+* paginatorTemplate: display the page switch of the table.
+* currentPageReportTemplate: Display the data of the table.
+* rows: the number of rows you want to display in a page.
+* rowsPerPageOptions: option to display the number of users in a page.
+* sortMode: sort data.
+* field: get data from.
+* sortable: add sort function.
+* header: column header.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![image](https://user-images.githubusercontent.com/106050800/217057573-49e35cbd-68a8-4152-9bfe-a36da5f0d493.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
