@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+.card {
+    padding: 0 3rem;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.p-datatable .p-datatable-tbody > tr > td {
+    padding: 2px 1rem !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.p-paginator {
+    padding: 2px 1rem !important;
+    border-bottom-right-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.p-datatable .p-datatable-thead > tr > th {
+    padding: 0.8rem;
 }
 
-.App-link {
-  color: #61dafb;
+.app__container {
+    display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header__container {
+    width: 100%;
+    height: 56px;
+    padding: 10px 3rem;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__left {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.header__left h2 {
+    margin-left: 10px;
+}
+
+.header__center {
+    width: 400px;
+    background-color: #dddddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.header__center input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0 18px;
+    width: 100%;
+}
+
+.header__center svg,
+.icon__action {
+    cursor: pointer;
+}
+
+.icon__action {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.3rem;
+    margin-right: 2rem;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+}
+
+.header__right img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.content__container {
+    background-color: #f4f9f9;
+    margin-left: -30px;
+    width: 100%;
+    border-radius: 25px;
+    padding-bottom: 11px;
+}
+
+.sidebar__container {
+    background-color: #40189d;
+    width: 320px;
+}
+
+.logo {
+    cursor: pointer;
+    padding: 10px 0 1rem 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list__menu {
+    margin-top: 4rem;
+    margin-left: 30px;
+}
+
+.active__item {
+    background-color: #f4f9f9;
+    color: #40189d !important;
+}
+
+.list__item {
+    padding: 1.3rem 0;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 30px;
+}
+
+.list__item svg {
+    color: white;
+    margin-left: 30px;
+    margin-right: 20px;
 }
